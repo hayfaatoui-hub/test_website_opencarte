@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +17,7 @@ public class TestBase {
 
     @BeforeSuite
     @Parameters({"browser"})
-    public void startDriver(@Optional("chrome") String browser){
+    public void startDriver(@Optional("edge") String browser){
 
         if(browser.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");

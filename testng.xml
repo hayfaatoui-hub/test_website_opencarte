@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="opencart Regression Suite">
+    <parameter name="browser" value="chrome"/>
+    <test name="Regression Test" preserve-order="true">
+        <classes>
+            <class name="tests.ChangeCurrencyTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

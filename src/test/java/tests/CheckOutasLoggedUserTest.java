@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import Pages.HomePage;
 import Pages.ShoppingCartPage;
@@ -39,5 +39,8 @@ public class CheckOutasLoggedUserTest extends TestBase {
                 "kkkk","kkkk", "kkkk","dsjh");
         Thread.sleep(3000);
         Assert.assertTrue(shoppingCartObject.successMsg.getText().contains("Your order has been placed!"));
+        Thread.sleep(4000);
+        homeObject.LogOutClick();
+        homeObject.homeLink.click();
     }
 }

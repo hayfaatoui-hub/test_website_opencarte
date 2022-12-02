@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import Pages.HomePage;
 import Pages.ShoppingCartPage;
@@ -25,10 +25,17 @@ public class CheckShoppingCartTest extends TestBase{
     @Test(priority = 2)
     public void RemoveProductFromCart() throws InterruptedException {
 
+        shoppingcartObject = new ShoppingCartPage(driver);
         shoppingcartObject.RemoveProductFromCart();
         Thread.sleep(3000);
         Assert.assertTrue(shoppingcartObject.cartEmpty.getText().contains("empty"));
 
+    }
+
+    @Test(priority = 3)
+    public void OpenHomePage(){
+        homeObject = new HomePage(driver);
+        homeObject.homeLink.click();
     }
 
 }

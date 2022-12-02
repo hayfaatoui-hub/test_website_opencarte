@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import Pages.AccountPage;
 import Pages.HomePage;
@@ -21,6 +21,7 @@ public class LoginTest extends TestBase{
         loginObject.Login("qqq@q.q","qqqq");
         Assert.assertTrue(accountObject.accountTitle.getText().equals("My Account"));
         Thread.sleep(4000);
+        homeObject.homeLink.click();
 
     }
 }

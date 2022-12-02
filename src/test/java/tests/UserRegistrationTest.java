@@ -1,4 +1,4 @@
-package Tests;
+package tests;
 
 import Pages.AccountPage;
 import Pages.HomePage;
@@ -59,5 +59,6 @@ public class UserRegistrationTest extends TestBase {
     public void LogOut()
     {
         homeObject.LogOutClick();
+        homeObject.homeLink.click();
     }
 }
