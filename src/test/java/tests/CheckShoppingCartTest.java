@@ -19,7 +19,7 @@ public class CheckShoppingCartTest extends TestBase{
         Thread.sleep(3000);
         shoppingcartObject.UpdateQuantityProduct();
         Thread.sleep(3000);
-        Assert.assertTrue(shoppingcartObject.totalPriceProduct.getText().contains("1,204"));
+        Assert.assertTrue(shoppingcartObject.totalPriceProduct.getText().contains("944"));
         Thread.sleep(3000);
     }
     @Test(priority = 2)
