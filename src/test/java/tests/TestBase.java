@@ -17,7 +17,7 @@ public class TestBase {
 
     @BeforeSuite
     @Parameters({"browser"})
-    public void startDriver(@Optional("edge") String browser){
+    public void startDriver(@Optional("opera") String browser){
 
         if(browser.equalsIgnoreCase("chrome")){
             System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/chromedriver.exe");
@@ -30,6 +30,10 @@ public class TestBase {
         else if(browser.equalsIgnoreCase("edge")){
             System.setProperty("webdriver.edge.driver",System.getProperty("user.dir")+"/drivers/msedgedriver.exe");
             driver = new EdgeDriver();
+        }
+        else if(browser.equalsIgnoreCase("opera")){
+            System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/drivers/operadriver.exe");
+            driver = new ChromeDriver();
         }
 
 
