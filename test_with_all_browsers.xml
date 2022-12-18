@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression opencart test suite" thread-count="4" parallel="tests">
+
+
+    <suite-files>
+        <suite-file path="test_with_chrome.xml"/>
+        <suite-file path="test_with_edge.xml"/>
+        <suite-file path="test_with_firefox.xml"/>
+    </suite-files>
+
+
+</suite> <!-- Suite -->

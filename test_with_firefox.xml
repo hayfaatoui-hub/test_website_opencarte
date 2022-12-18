@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="test with firefox"  thread-count="5" >
+        <parameter name="browser" value="firefox"/>
+        <test name="with firefox" preserve-order="true">
+            <classes>
+                <class name="tests.ChangeCurrencyTest"/>
+
+            </classes>
+        </test> <!-- Test -->
+    </suite> <!-- Suite -->
